@@ -23,6 +23,11 @@ section h2{font-size:1.8rem;margin:35px 0 14px}.uses{background:#eaf3fc;border-r
 
 /* Readable body copy; preserve centered headings and interactive UI. */
 main p, main blockquote { text-align:left; }
+
+/* Consistent reading alignment: override section-specific centering, not headings. */
+main p, main blockquote, main .sub {text-align:left!important;}
+/* Keep photographic hero introductions centered for visual balance. */
+.hero p, .hero .sub {text-align:center!important;}
 </style>
 </head>
 <body>
