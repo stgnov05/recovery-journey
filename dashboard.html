@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#102b4b"><title>Member Dashboard | Recovery Journey</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f4f8fc;color:#193451;font:17px/1.6 system-ui,-apple-system,sans-serif}header,footer{background:#102b4b;color:white;padding:18px 22px}header a,footer a{color:white}main{max-width:950px;margin:auto;padding:38px 20px 70px}h1{line-height:1.15}h2{margin-top:0}.card{background:white;border:1px solid #d5dfe8;border-radius:18px;padding:25px;box-shadow:0 10px 24px #102b4b0a}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:18px;margin-top:24px}.muted{color:#526779}.avatar{height:84px;width:84px;object-fit:cover;border-radius:50%;background:#e6ebef;border:2px solid #b7c7d4}.row{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.button,button{display:inline-block;background:#244763;color:white;border:0;border-radius:10px;padding:11px 16px;text-decoration:none;font:700 1rem system-ui;cursor:pointer}.hide{display:none!important}.card a{color:#244763;font-weight:700}.card a.button{color:white}footer{text-align:center;margin-top:30px}</style></head><body>
+<header><a href="index.html">Recovery Journey</a> · <a href="account.html">Community Account</a> · <a href="profile.html">My Profile</a></header>
+<main><h1>Member Dashboard</h1><p class="muted">Your personal starting point for Recovery Journey.</p>
+<section class="card"><p id="status" role="status" aria-live="polite">Checking your account…</p>
+<div id="guest" class="hide"><p>Sign in to access your member dashboard.</p><a class="button" href="account.html">Sign in or create an account</a></div>
+<div id="member" class="hide"><div class="row"><img id="avatar" class="avatar" alt="Your profile image"><div><h2 id="greeting">Welcome back!</h2><p class="muted" id="email"></p><a href="profile.html">Edit your profile</a></div></div></div></section>
+<div id="features" class="grid hide">
+<section class="card"><h2>My Profile</h2><p>Update your display name, bio, and profile photo.</p><a href="profile.html">View and edit profile</a></section>
+<section class="card"><h2>Account Settings</h2><p>Manage sign-in, password recovery, and account access.</p><a href="account.html">Manage account</a></section>
+<section class="card"><h2>Recovery Journal</h2><p>Explore recovery reflections and journal articles. Private journal entries aren't available yet.</p><a href="blog.html">Read the Recovery Journal</a></section>
+<section class="card"><h2>Recovery Tools</h2><p>Explore resources and practical tools for your journey.</p><a href="recovery-tools.html">Explore recovery tools</a></section>
+<section class="card"><h2>Community Stories</h2><p>Read stories of encouragement. Member submissions are coming later.</p><a href="testimonials.html">Read community stories</a></section>
+<section class="card"><h2>Coming Soon</h2><p>Private journal entries, member preferences, and moderated community features are planned but not yet available.</p></section>
+</div></main><footer>Recovery Journey · One Day at a Time</footer>
+<script type="module">
+import {createClient} from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+const supabase=createClient('https://zqenzfehntwktushbadv.supabase.co','sb_publishable_fewIJEDG8D8JzzsuDWSZKg_ivz_D7Cw',{auth:{autoRefreshToken:true,persistSession:true,detectSessionInUrl:true}});
+const $=id=>document.getElementById(id);
+try{const {data,error}=await supabase.auth.getUser();if(error||!data.user){$('guest').classList.remove('hide');$('status').textContent='You are not signed in.'}else{const u=data.user,m=u.user_metadata||{};$('greeting').textContent='Welcome back, '+(m.profile_display_name||'community member')+'!';$('email').textContent=u.email||'';const fallback='<svg xmlns="http://www.w3.org/2000/svg" width="84" height="84"><rect width="84" height="84" fill="#e6ebef"/><circle cx="42" cy="30" r="16" fill="#91a9c2"/><ellipse cx="42" cy="80" rx="30" ry="29" fill="#91a9c2"/></svg>';$('avatar').src=m.profile_avatar||'data:image/svg+xml,'+encodeURIComponent(fallback);$('member').classList.remove('hide');$('features').classList.remove('hide');$('status').textContent='Your dashboard is ready.'}}catch(e){$('status').textContent='Could not load your account. Reload the page or sign in again.'}
+</script></body></html>
