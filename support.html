@@ -28,6 +28,11 @@ main p, main blockquote { text-align:left; }
 main p, main blockquote, main .sub {text-align:left!important;}
 /* Keep photographic hero introductions centered for visual balance. */
 .hero p, .hero .sub {text-align:center!important;}
+
+/* Mobile header: override legacy nav column layout; align reading text. */
+@media(max-width:900px){.rj-unified-nav{flex-direction:row!important;align-items:center!important;justify-content:space-between!important;flex-wrap:wrap!important}.rj-unified-brand{flex:0 1 auto;min-width:0}.rj-unified-toggle{flex:0 0 auto;margin-left:auto!important}.rj-unified-links{flex:0 0 100%}}
+main p,main blockquote,main .sub,main .intro p{ text-align:left!important; }
+.hero p,.hero .sub{ text-align:center!important; }
 </style>
 </head>
 <body>

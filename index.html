@@ -89,6 +89,11 @@ main p, main blockquote { text-align: left; }
 main p, main blockquote, main .sub {text-align:left!important;}
 /* Keep photographic hero introductions centered for visual balance. */
 .hero p, .hero .sub {text-align:center!important;}
+
+/* Mobile header: override legacy nav column layout; align reading text. */
+@media(max-width:900px){.rj-unified-nav{flex-direction:row!important;align-items:center!important;justify-content:space-between!important;flex-wrap:wrap!important}.rj-unified-brand{flex:0 1 auto;min-width:0}.rj-unified-toggle{flex:0 0 auto;margin-left:auto!important}.rj-unified-links{flex:0 0 100%}}
+main p,main blockquote,main .sub,main .intro p{ text-align:left!important; }
+.hero p,.hero .sub{ text-align:center!important; }
 </style><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Recovery Journey","url":"https://stgnov05.github.io/recovery-journey/","description":"Faith-based encouragement, addiction recovery resources, personal stories, and practical tools for every stage of recovery.","inLanguage":"en-US","publisher":{"@type":"Person","name":"Steven Gregory"},"sameAs":["https://www.facebook.com/share/1HewtDaZeQ/?mibextid=wwXIfr","https://www.instagram.com/cardboardheroes05/","https://www.threads.net/@stgnov75"]}</script></head><body>
 <header class="rj-unified-header"><nav class="rj-unified-nav" aria-label="Main navigation"><a class="rj-unified-brand" href="index.html">🌿 Recovery Journey</a><button class="rj-unified-toggle" type="button" aria-label="Open navigation menu" aria-controls="rj-unified-links" aria-expanded="false">☰</button><div class="rj-unified-links" id="rj-unified-links"><a href="index.html" aria-current="page">Home</a><a href="start-here.html">Start Here</a><a href="my-journey.html">My Story</a><a href="resources.html">Find Support</a><a href="articles.html">Articles</a><a href="recovery-tools.html">Recovery Tools</a><a href="#site-directory">All Pages ↓</a></div></nav></header>
 <main><div class="hero" id="home"><div class="kicker">Hope • Healing • New Beginnings</div><h1>Recovery Journey</h1>
