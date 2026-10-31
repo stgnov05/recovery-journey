@@ -46,6 +46,11 @@ footer{text-align:center;background:#0c2545;color:#eaf2fc;padding:28px 20px;font
 /* Reading alignment: consistent, accessible paragraph flow across pages.
    Keep headings, navigation, controls, and hero presentation unchanged. */
 main p, main blockquote { text-align: left; }
+
+/* Consistent reading alignment: override section-specific centering, not headings. */
+main p, main blockquote, main .sub {text-align:left!important;}
+/* Keep photographic hero introductions centered for visual balance. */
+.hero p, .hero .sub {text-align:center!important;}
 </style>
 </head>
 <body>
