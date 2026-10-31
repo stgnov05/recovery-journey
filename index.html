@@ -15,6 +15,12 @@
 <meta name="twitter:image" content="https://stgnov05.github.io/recovery-journey/recovery-journey-social-preview.jpg">
 <meta property="og:type" content="website"><meta property="og:url" content="https://stgnov05.github.io/recovery-journey/"><title>Recovery Journey | Steven Gregory</title>
 <style>
+/* Hero photo framing: keep the angled transition below all actions */
+.hero{isolation:isolate;padding-bottom:clamp(110px,12vw,155px)!important}
+.hero:after{bottom:-54px;height:95px;z-index:0}
+.hero .kicker,.hero h1,.hero p,.hero-actions{position:relative;z-index:1}
+.coast-story-photo img{object-position:center 40%}
+@media(max-width:600px){.hero{padding-bottom:115px!important}.hero:after{bottom:-62px;height:85px}.coast-story-photo img{object-position:center 38%}}
 /* Homepage refinement: focus, legibility, and mobile comfort */
 :root{--gold:#c6d0d8}body{overflow-x:hidden}main{display:block}.rj-unified-nav{max-width:1200px}.rj-unified-links{gap:clamp(9px,1.5vw,18px)}.rj-unified-links a{font-size:.94rem;white-space:nowrap}.rj-unified-links a:last-child{color:#d5e3ed!important}.rj-unified-toggle{min-width:48px;min-height:46px}.hero{min-height:0;padding-block:clamp(78px,10vw,132px)!important}.hero h1{max-width:900px}.hero p{max-width:710px}.hero-actions{max-width:660px}.hero-actions .btn{min-height:54px}.path-band{background:#eaf2f7}.path-band h2,.path-band .sub{text-align:center}.path-band .sub{max-width:720px;margin:0 auto 24px}.card a{font-weight:700;text-underline-offset:3px}.card:focus-within{outline:2px solid #22649a;outline-offset:3px}section{scroll-margin-top:24px}.btn:focus-visible,.rj-unified-toggle:focus-visible,.rj-unified-links a:focus-visible{outline:3px solid #d4e6f5;outline-offset:3px}.rj-unified-directory{scroll-margin-top:18px}@media(max-width:900px){.rj-unified-nav{flex-wrap:wrap}.rj-unified-links{gap:0}.rj-unified-links a{white-space:normal;min-height:44px;display:flex;align-items:center}}@media(max-width:600px){section{padding:46px 18px}.hero{padding:62px 18px 76px!important}.hero-actions{gap:10px}.hero-actions .btn{min-height:52px}.coast-story{padding:45px 18px}.coast-story-photo img{aspect-ratio:4/3}.story-grid{gap:24px}.card{padding:22px}.feature-band .sub{margin-bottom:18px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
