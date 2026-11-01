@@ -83,7 +83,7 @@ body{background:linear-gradient(115deg,#eaf4fd 0%,#f8fbff 48%,#e9f3fb 100%);colo
 
 
 /* November photographic polish: real Olympic Mountains panorama, compact home, clean footer */
-.rj-unified-header{background-image:linear-gradient(180deg,rgba(7,28,49,.35),rgba(8,28,46,.68)),url("https://commons.wikimedia.org/wiki/Special:FilePath/OlympicRangePano.jpg?width=1600");background-position:center 52%;background-size:cover;background-repeat:no-repeat;background-color:#153a56}
+.rj-unified-header{background-image:linear-gradient(180deg,rgba(7,28,49,.35),rgba(8,28,46,.68)),url("https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/OlympicRangePano.jpg/1280px-OlympicRangePano.jpg");background-position:center 52%;background-size:cover;background-repeat:no-repeat;background-color:#153a56}
 .rj-unified-brand .brand-mountain{font-family:Georgia,serif;font-weight:700;letter-spacing:.05em}
 body:has(#home) main{padding-top:18px}
 #home.hero{padding:12px 12px 27px;max-width:900px;margin:0 auto;text-align:center}
