@@ -1,0 +1,26 @@
+/* Recovery Journey — unified calm mountain design. Visual-only layer. */
+:root{--rj-navy:#102b4b;--rj-deep:#09233e;--rj-blue:#176487;--rj-cream:#fff8e9;--rj-pale:#f3f8fd}
+html{scroll-behavior:smooth}
+body{background:linear-gradient(180deg,#f8fbff,#eff6fc 56%,#f8fbff)!important;color:#193451}
+body :is(h1,h2,h3){letter-spacing:-.025em}
+body :is(p,li){line-height:1.7}
+.rj-unified-header{background:linear-gradient(180deg,#102b4b,#0c304f)!important;position:relative;isolation:isolate;overflow:visible}
+.rj-unified-header::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;opacity:.35;background:radial-gradient(ellipse at 70% 110%,#4e8aa3,transparent 68%)}
+.rj-unified-brand{font-weight:800;letter-spacing:-.025em}
+.hero{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(125deg,#0b263f 0%,#174f6b 70%,#356f83 100%)!important;color:#fff!important;border-radius:0!important;text-align:center;box-shadow:none!important;padding:clamp(65px,8vw,108px) 22px clamp(105px,11vw,150px)!important}
+.hero::before{content:"";position:absolute;inset:auto 0 0;height:47%;z-index:-1;pointer-events:none;background:linear-gradient(180deg,transparent 0%,#90b7c542 100%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 240' preserveAspectRatio='xMidYMax slice'%3E%3Cpath fill='%237da6ba' opacity='.42' d='M0 168 Q90 128 175 165 Q280 103 360 146 Q460 88 550 145 Q655 95 755 150 Q865 108 955 154 Q1070 125 1200 170 V240 H0Z'/%3E%3Cpath fill='%233a7795' opacity='.72' d='M0 193 Q140 147 235 181 Q360 129 475 183 Q595 135 710 187 Q855 137 970 188 Q1090 151 1200 190 V240 H0Z'/%3E%3Cpath fill='%230a3452' opacity='.9' d='M0 216 Q110 184 245 214 Q385 177 525 213 Q650 175 780 215 Q920 180 1045 215 Q1120 194 1200 216 V240 H0Z'/%3E%3Cpath fill='%2307223b' d='M0 240V223L18 193 8 193 26 171 17 171 35 149 53 171 44 171 62 193 52 193 70 223 83 222 96 203 89 203 104 185 98 185 112 166 126 185 120 185 135 203 128 203 144 226 176 224 193 194 184 194 202 174 194 174 212 152 231 174 222 174 240 194 231 194 249 226 285 226 303 202 295 202 313 180 305 180 323 160 342 180 334 180 352 202 344 202 363 225 410 227 429 199 420 199 439 176 430 176 449 151 468 176 459 176 478 199 469 199 488 226 530 225 547 198 539 198 556 178 549 178 565 160 581 178 574 178 591 198 583 198 600 226 645 225 665 194 656 194 674 171 666 171 684 148 703 171 694 171 712 194 703 194 723 227 770 226 789 200 781 200 798 178 790 178 808 157 826 178 818 178 835 200 827 200 846 225 895 227 914 197 905 197 923 173 914 173 933 149 952 173 943 173 961 197 952 197 971 226 1014 226 1032 203 1024 203 1041 181 1034 181 1051 163 1068 181 1061 181 1078 203 1070 203 1088 227 1128 224 1148 193 1139 193 1157 169 1148 169 1167 145 1186 169 1177 169 1195 193 1186 193 1200 220V240Z'/%3E%3C/svg%3E") center bottom/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:24%;z-index:-2;background:linear-gradient(0deg,#08314a77,transparent);pointer-events:none}
+.hero :is(h1,p,.kicker,.eyebrow){position:relative;z-index:1;color:#fff!important;text-shadow:0 2px 13px #061d3266}
+.hero h1{font-size:clamp(2.2rem,5vw,3.9rem)!important;line-height:1.14!important;font-weight:800!important}
+.hero p{max-width:750px;margin-left:auto;margin-right:auto}
+.hero :is(.kicker,.eyebrow){letter-spacing:.17em;text-transform:uppercase;font-size:.82rem;font-weight:750}
+main{max-width:1150px;margin-left:auto;margin-right:auto}
+:is(.card,.note,.notice,.resource-card,.feature-card){border-radius:23px!important;border:1px solid #d5e3ef!important;box-shadow:0 12px 28px #102b4b0d!important}
+:is(.card,.note,.notice,.resource-card,.feature-card) h2{line-height:1.23}
+:is(button,.button,.btn,input[type=submit]){border-radius:15px;transition:box-shadow .18s ease,transform .18s ease}
+:is(button,.button,.btn,input[type=submit]):hover{box-shadow:0 6px 17px #102b4b22}
+:is(button,.button,.btn,input[type=submit]):active{transform:translateY(1px)}
+:is(input:not([type=checkbox]),textarea,select){border-radius:12px}
+:is(a,button,input,textarea,select):focus-visible{outline:3px solid #4a92bd;outline-offset:3px}
+@media(max-width:700px){.hero{padding:62px 20px 115px!important}.hero::before{height:36%}main{max-width:100%}:is(.card,.note,.notice,.resource-card,.feature-card){border-radius:20px!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}:is(button,.button,.btn,input[type=submit]){transition:none}}
