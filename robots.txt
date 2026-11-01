@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stgnov05.github.io/recovery-journey/sitemap.xml
