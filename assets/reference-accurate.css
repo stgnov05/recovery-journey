@@ -179,3 +179,29 @@ body:has(#home) #home.hero .hero-actions a:first-child{grid-column:auto}
 .rj-account-submit button,.rj-account-secondary button{display:flex;align-items:center;justify-content:center;width:100%;max-width:100%;box-sizing:border-box;text-align:center;padding:11px 16px;font-size:.88rem}
 .rj-account-secondary{margin-top:10px;margin-bottom:17px}
 }
+
+
+/* Homepage directory and footer finishing touches */
+body:has(#home) .rj-unified-directory{margin:8px auto 0;padding:8px 25px 17px}
+body:has(#home) .rj-directory-actions{display:flex;flex-wrap:nowrap;align-items:center;gap:14px}
+body:has(#home) .rj-directory-details{min-width:0}
+body:has(#home) .rj-directory-details>summary{white-space:nowrap}
+body:has(#home) .rj-directory-details[open] nav{padding:15px 0 7px;gap:10px 16px}
+body:has(#home) footer{padding:25px 18px 27px}
+body:has(#home) footer>div{margin-bottom:16px!important;padding-bottom:17px!important}
+body:has(#home) footer>div>h2{margin-bottom:5px!important}
+body:has(#home) footer>div>p{margin-bottom:12px!important}
+body:has(#home) footer .rj-footer-essential-links{display:flex;flex-wrap:wrap;justify-content:center;gap:9px 23px;margin:12px auto 19px}
+body:has(#home) footer .rj-footer-essential-links a{font-size:.88rem;color:#f5f9ff;text-underline-offset:4px}
+body:has(#home) footer>strong{display:block;margin:8px auto;font-size:1.06rem}
+body:has(#home) footer>p{margin:8px auto;line-height:1.45}
+body:has(#home) footer .photo-credit{margin-top:14px}
+@media(max-width:760px){
+body:has(#home) .rj-unified-directory{margin:0 auto;padding:7px 17px 15px}
+body:has(#home) .rj-directory-actions{gap:12px}
+body:has(#home) .rj-directory-details[open] nav{padding:12px 0 7px}
+body:has(#home) footer{padding:21px 13px 25px}
+body:has(#home) footer .rj-footer-essential-links{gap:10px 18px;margin:10px auto 17px}
+body:has(#home) footer .rj-footer-essential-links a{font-size:.82rem}
+body:has(#home) footer>p{font-size:.82rem}
+}
