@@ -57,3 +57,9 @@ main{max-width:1180px!important;padding:24px clamp(16px,3vw,34px) 70px!important
 .rj-coastal-panel img{display:block;width:100%;max-height:310px;object-fit:cover;object-position:center 55%}
 .rj-coastal-panel figcaption{font-size:.78rem;color:#34546b;padding:8px 12px;background:#edf5fc}
 @media(max-width:700px){.rj-unified-links{top:68px!important}.rj-unified-brand{max-width:calc(100% - 100px)!important}.hero .hero-actions{gap:8px!important}.hero .hero-actions .btn{flex:1 1 140px!important}.journal-actions{justify-content:flex-start!important}.journal-secondary-actions{width:100%!important}.journal-secondary-actions button{flex:1 1 120px!important}.rj-coastal-panel img{max-height:220px}}
+
+
+/* The masthead uses the site's existing Pacific Northwest photograph, not a remote asset. */
+.rj-unified-header{background:linear-gradient(180deg,#061b32c9,#08263bb5),url("../43B0B457-6062-47EA-9675-29B38645B7EE.png") center 49%/cover no-repeat!important}
+.rj-unified-header::before{background:linear-gradient(180deg,#061a3026 0%,#0b2c43a8 100%)!important;opacity:1!important}
+.rj-unified-header::after{background:linear-gradient(0deg,#061b30b5,transparent 72%)!important}
