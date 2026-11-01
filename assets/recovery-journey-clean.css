@@ -77,3 +77,31 @@ img{max-width:100%}
 @media(max-width:720px){.rj-unified-header{height:155px}.rj-unified-nav{padding:10px 65px}.rj-unified-brand{font-size:clamp(1.45rem,5.3vw,2.2rem)}.rj-unified-brand:after{font-size:.48rem;letter-spacing:.06em}.rj-unified-toggle{left:13px;top:16px}.rj-unified-links{top:72px;left:12px}.grid{grid-template-columns:minmax(0,1fr);gap:15px}.card,.feature-card,.resource-card{padding:20px}main{padding:16px 17px 50px}.hero{padding:24px 16px 20px}.hero h1{font-size:clamp(2rem,8vw,2.8rem)}.journal-actions{justify-content:flex-start}.journal-secondary-actions{width:100%;justify-content:flex-start}.journal-actions button{font-size:.86rem;padding:10px 15px}.stats{gap:6px}.rj-unified-directory{padding:0 17px}}
 @media(max-width:370px){.journal-secondary-actions button{flex:0 1 auto}.rj-unified-brand:after{font-size:.4rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Functional compatibility for existing account forms, menus, resources and content. */
+.hide,.hidden,[aria-hidden="true"]{display:none}
+header:not(.rj-unified-header){background:#102b4b;color:#fff;padding:15px 20px}
+header:not(.rj-unified-header) a{color:#fff}
+section{min-width:0}
+article,.article,.panel,.feature,.resource,.resource-item,.resource-card,.feature-card,.story-card,.review-card,.faq-card,.entry-card{max-width:100%}
+section:not(.hero) h2,article h2{font-family:Georgia,"Times New Roman",serif;color:#102b4b}
+h3{color:#153a56}
+blockquote{border-left:4px solid #5b91a9;background:#eef6fb;padding:18px 20px;border-radius:8px;margin:18px 0}
+main>section{margin-bottom:22px}
+main>section.card{margin-bottom:18px}
+.rj-site-footer-nav{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.rj-unified-directory details{position:relative}
+.rj-unified-directory summary{cursor:pointer}
+.rj-unified-directory nav a{color:#17617e}
+.row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.avatar{width:76px;height:76px;border-radius:50%;object-fit:cover}
+.dashboard-subtitle{text-align:center}
+.mountain-rule{text-align:center;color:#537e97;letter-spacing:.3em;margin-top:12px}
+.journal-history .journal-entry-actions{display:flex;flex-wrap:wrap}
+#journal-list:empty{min-height:0}
+#journal-search-panel{margin-top:10px}
+#action-list label{font-weight:500}
+.hero+.intro{margin-top:5px}
+details>summary{cursor:pointer}
+details[open]>summary{margin-bottom:10px}
+@media(max-width:720px){.row{align-items:flex-start}.rj-unified-brand{max-width:100%}main>section{margin-bottom:15px}}
