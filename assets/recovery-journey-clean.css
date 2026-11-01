@@ -149,3 +149,67 @@ details[open]>summary{margin-bottom:10px}
 #book-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:900px){.cards,.resource-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.coast-story-inner{grid-template-columns:1fr}.coast-story-photo img{max-height:300px}}
 @media(max-width:720px){.cards,.resource-cards,#book-grid,.story-grid{grid-template-columns:1fr}.container{padding:0 2px}.soft{padding:19px 13px}.book-card{grid-template-columns:105px minmax(0,1fr);padding:13px;gap:12px}.book-card .cover{min-height:180px}.coast-story-copy{padding:20px}.coast-story-photo img{min-height:190px}.cta,.feature-band,.path-band{padding:20px}}
+
+
+/* v3: reference-driven complete responsive visual layout */
+:root{--navy:#142e4c;--ink:#1b3650;--blue:#246e8a;--mist:#eaf3f9;--edge:#d4e1eb}
+body{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:16px;line-height:1.62;background:linear-gradient(115deg,#f6faff,#eaf4fb 62%,#f8fbff)}
+.rj-unified-header{height:270px;background:linear-gradient(180deg,#081e32a8 0%,#102b4582 46%,#071c31c9 100%),url("../43B0B457-6062-47EA-9675-29B38645B7EE.png") center 47%/cover no-repeat}
+.rj-unified-nav{padding:22px 78px}
+.rj-unified-brand{font-size:clamp(2rem,4.2vw,3.5rem);letter-spacing:.01em;line-height:1.13;gap:10px}
+.rj-unified-brand:before,.rj-unified-brand:after{display:none;content:none}
+.rj-unified-brand .brand-mountain{font-family:Georgia,serif;font-size:1.7rem;letter-spacing:.2em;font-weight:400;color:#e6f2f6}
+.rj-unified-brand small{font-family:ui-sans-serif,system-ui,sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.22em;line-height:1.6}
+.rj-unified-toggle{left:24px;top:25px;width:48px;height:48px;border-radius:50%;background:#102e49b8;box-shadow:none}
+.rj-header-search{position:absolute;right:25px;top:25px;width:48px;height:48px;border:1px solid #c3d9e58c;border-radius:50%;display:grid;place-items:center;color:#fff;text-decoration:none;font-size:2.1rem;line-height:1;background:#102e49b8}
+.rj-unified-links{top:82px}
+main{max-width:1130px;padding:30px 28px 80px}
+.hero{padding:24px 16px 28px}
+.hero h1{font-size:clamp(2.3rem,5vw,3.9rem)}
+.hero .kicker,.eyebrow,.kicker{font-size:.72rem;letter-spacing:.23em}
+.hero p{font-size:1.02rem;line-height:1.65}
+.intro{padding:8px 0 20px}
+.intro h2{font-size:clamp(1.7rem,3vw,2.25rem)}
+.card,.feature-card,.resource-card,.notice,.safety{border-radius:22px;padding:clamp(22px,2.8vw,32px);box-shadow:0 9px 26px #0f35501a}
+.card h2,.feature-card h2,.resource-card h2{font-size:clamp(1.35rem,2.2vw,1.75rem);line-height:1.25}
+.card p,.feature-card p{font-size:.96rem}
+.grid{gap:20px}
+button,.button,.btn,input[type=submit],.rj-home-button{background:linear-gradient(135deg,#358eac,#1c617f);border:1px solid #216985;color:#fff;border-radius:999px;min-height:41px;padding:10px 18px;font-size:.88rem;box-shadow:0 4px 10px #143b511b;line-height:1.25}
+button.secondary,.secondary{background:linear-gradient(135deg,#f4f8fc,#e5edf4);border:1px solid #cbdce7;color:#234963;box-shadow:none}
+.journal-actions{justify-content:flex-start;gap:9px}
+.journal-secondary-actions{width:auto;justify-content:flex-start}
+.journal-history{margin-top:18px;padding-top:17px}
+.journal-list{gap:12px}
+.journal-saved-entry{padding:16px;background:#f6fafe;border-radius:15px}
+.journal-entry-actions{gap:8px}
+.journal-entry-actions button{min-width:0;overflow-wrap:anywhere}
+.rj-coastal-panel{border-radius:17px}
+.rj-coastal-panel img{max-height:265px}
+.cards .card{height:100%}
+.cards{gap:18px}
+.coast-story{margin-top:12px}
+footer{background:#112f4c}
+@media(min-width:850px){.grid>.card:nth-child(2),.grid>.card:nth-child(3){grid-column:auto}}
+@media(max-width:720px){
+.rj-unified-header{height:210px;background-position:center 45%}
+.rj-unified-nav{padding:30px 62px 18px}
+.rj-unified-brand{font-size:clamp(1.45rem,5.2vw,2.15rem);gap:6px;line-height:1.15}
+.rj-unified-brand .brand-mountain{font-size:1.25rem}
+.rj-unified-brand small{font-size:.46rem;letter-spacing:.09em}
+.rj-unified-toggle,.rj-header-search{top:16px;width:40px;height:40px}
+.rj-unified-toggle{left:12px;font-size:1.25rem}
+.rj-header-search{right:12px;font-size:1.65rem}
+.rj-unified-links{top:64px;left:12px}
+main{padding:20px 16px 54px}
+.hero{padding:18px 4px 24px}
+.hero h1{font-size:clamp(2rem,8vw,2.8rem)}
+.hero p{font-size:.98rem}
+.intro{padding:4px 0 18px}
+.card,.feature-card,.resource-card{padding:20px;border-radius:19px}
+.grid{gap:16px}
+.journal-actions,.journal-secondary-actions{gap:8px}
+.journal-actions button,.journal-entry-actions button{font-size:.83rem;padding:9px 13px;min-height:39px}
+.journal-actions{align-items:flex-start}
+.journal-secondary-actions{width:100%;justify-content:flex-start}
+.cards{gap:15px}
+}
