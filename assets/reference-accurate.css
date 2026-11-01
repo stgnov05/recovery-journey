@@ -162,3 +162,20 @@ body:has(#home) .coast-story-copy{padding:19px}
 body:has(#home) #home.hero .hero-actions{grid-template-columns:1fr;max-width:310px}
 body:has(#home) #home.hero .hero-actions a:first-child{grid-column:auto}
 }
+
+
+/* Consistent action groups: avoid glued-together pills on mobile. */
+.rj-action-group{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:16px 0 20px}
+.rj-action-group>.button,.rj-action-group>.btn{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;margin:0;min-height:43px;text-align:center;line-height:1.25;white-space:normal}
+.rj-account-submit{margin:15px 0 0}
+.rj-account-submit button{margin:0;min-height:44px}
+.rj-account-secondary{display:flex;gap:10px;margin:10px 0 15px}
+.rj-account-secondary button{margin:0;min-height:42px}
+#signed-out .rj-account-submit button:disabled{opacity:.55;cursor:not-allowed}
+@media(max-width:760px){
+.rj-action-group{display:grid;grid-template-columns:1fr;gap:10px;margin:16px 0 19px;max-width:360px}
+.rj-action-group>.button,.rj-action-group>.btn{width:100%;max-width:100%;min-width:0;min-height:43px;padding:11px 15px;font-size:.88rem}
+.rj-account-submit,.rj-account-secondary{max-width:360px}
+.rj-account-submit button,.rj-account-secondary button{display:flex;align-items:center;justify-content:center;width:100%;max-width:100%;box-sizing:border-box;text-align:center;padding:11px 16px;font-size:.88rem}
+.rj-account-secondary{margin-top:10px;margin-bottom:17px}
+}
