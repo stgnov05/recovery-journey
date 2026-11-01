@@ -80,3 +80,53 @@ body{background:linear-gradient(115deg,#eaf4fd 0%,#f8fbff 48%,#e9f3fb 100%);colo
 .reference-grounding .steps li:before{width:30px;height:30px}
 .reference-next #action-list label{font-size:.87rem}
 }
+
+
+/* November photographic polish: real Olympic Mountains panorama, compact home, clean footer */
+.rj-unified-header{background-image:linear-gradient(180deg,rgba(7,28,49,.35),rgba(8,28,46,.68)),url("https://commons.wikimedia.org/wiki/Special:FilePath/OlympicRangePano.jpg?width=1600");background-position:center 52%;background-size:cover;background-repeat:no-repeat;background-color:#153a56}
+.rj-unified-brand .brand-mountain{font-family:Georgia,serif;font-weight:700;letter-spacing:.05em}
+body:has(#home) main{padding-top:18px}
+#home.hero{padding:12px 12px 27px;max-width:900px;margin:0 auto;text-align:center}
+#home.hero .kicker{font-size:.7rem;letter-spacing:.2em}
+#home.hero h1{font-size:clamp(2.25rem,4.5vw,3.6rem);line-height:1.13;margin:10px 0 13px}
+#home.hero p{max-width:770px;margin:0 auto 14px;font-size:1rem;line-height:1.6}
+#home.hero p strong{font-size:1.12rem}
+#home.hero .hero-actions{display:flex;justify-content:center;gap:10px;margin:18px auto 0}
+#home.hero .hero-actions a{min-height:41px;padding:10px 18px;font-size:.88rem}
+body:has(#home) main>section,body:has(#home) main>.coast-story{margin-top:22px;margin-bottom:22px}
+body:has(#home) .coast-story-inner{align-items:stretch}
+body:has(#home) .coast-story-photo img{min-height:280px;max-height:380px}
+body:has(#home) .coast-story-copy{padding:clamp(20px,3vw,34px)}
+body:has(#home) .coast-story-copy h2{font-size:clamp(1.5rem,2.6vw,2.15rem)}
+body:has(#home) .feature-band,body:has(#home) .path-band{padding:20px 18px}
+body:has(#home) .intro{padding:12px 0}
+body:has(#home) .intro p{max-width:800px;margin:8px auto 0;font-size:1rem;line-height:1.6}
+body:has(#home) .card{padding:20px}
+body:has(#home) .cards{gap:14px;margin:15px 0}
+body:has(#home) h2{line-height:1.25}
+footer{padding:27px 18px 30px;text-align:center;background:#112e4a;color:#eef5fa}
+footer a{color:#f5f9ff;text-underline-offset:3px}
+footer .rj-site-footer-nav{display:flex;align-items:center;justify-content:center;gap:10px 24px;flex-wrap:wrap;margin:0 auto 22px;max-width:900px}
+footer .rj-site-footer-nav a{font-size:.88rem;text-decoration:none;border-bottom:1px solid #8cabc2;padding-bottom:3px}
+footer p{max-width:880px;margin:12px auto;font-size:.85rem;line-height:1.6}
+footer>div{max-width:900px}
+footer .photo-credit{font-size:.72rem;color:#c4d5e2;margin-top:16px}
+@media(max-width:760px){
+.rj-unified-header{height:170px;background-position:center 50%}
+body:has(#home) main{padding-top:8px}
+#home.hero{padding:9px 3px 16px}
+#home.hero h1{font-size:clamp(2rem,8vw,2.8rem);margin:8px 0 10px}
+#home.hero p{font-size:.9rem;line-height:1.52;margin-bottom:10px}
+#home.hero p strong{font-size:1rem}
+#home.hero .hero-actions{gap:8px;margin-top:13px}
+#home.hero .hero-actions a{font-size:.82rem;padding:9px 14px;min-height:38px}
+body:has(#home) main>section,body:has(#home) main>.coast-story{margin-top:15px;margin-bottom:15px}
+body:has(#home) .coast-story-photo img{min-height:195px;max-height:250px}
+body:has(#home) .coast-story-copy{padding:18px}
+body:has(#home) .feature-band,body:has(#home) .path-band{padding:17px 14px}
+body:has(#home) .card{padding:18px}
+body:has(#home) .intro p{font-size:.92rem}
+footer{padding:22px 14px 27px}
+footer .rj-site-footer-nav{gap:10px 18px;margin-bottom:18px}
+footer .rj-site-footer-nav a{font-size:.82rem}
+}
