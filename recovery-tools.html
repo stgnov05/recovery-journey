@@ -44,6 +44,15 @@ main p,main blockquote,main .sub,main .intro p{ text-align:left!important; }
 /* Collapsible journal search, matching other secondary journal controls */
 #toggle-journal-search{display:block;width:100%;max-width:none;box-sizing:border-box;min-height:52px;margin:10px 0 12px;padding:12px 16px;border-radius:12px}#journal-search-panel[hidden]{display:none!important}#journal-search-panel{margin-bottom:14px}#journal-search-panel label{display:block;margin-bottom:8px}
 
+
+/* Phase 2: restrained Pacific Northwest mountain silhouette in the hero only. */
+.hero{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(125deg,#081b32 0%,#164864 67%,#356d7b 100%)!important}
+.hero::before,.hero::after{content:"";position:absolute;pointer-events:none;z-index:-1;left:0;right:0;bottom:0}
+.hero::before{height:57%;background:#8cb0c326;clip-path:polygon(0 76%,9% 64%,17% 72%,29% 30%,38% 58%,48% 20%,58% 54%,70% 29%,81% 63%,91% 42%,100% 67%,100% 100%,0 100%)}
+.hero::after{height:39%;background:#071e3570;clip-path:polygon(0 59%,10% 72%,22% 41%,32% 71%,43% 47%,53% 77%,65% 38%,77% 72%,88% 46%,100% 67%,100% 100%,0 100%)}
+.hero .kicker,.hero h1,.hero p{position:relative;z-index:1;text-shadow:0 2px 12px #071b3050}
+@media(max-width:700px){.hero{padding:64px 20px 82px!important}.hero::before{height:45%}.hero::after{height:30%}}
+
 /* Calm visual refresh, phase 1: Recovery Tools only. Existing palette and behavior retained. */
 body{background:linear-gradient(180deg,#f7faff 0%,#eef5fb 52%,#f7faff 100%)}
 main{max-width:1120px}
