@@ -224,3 +224,43 @@ body:has(#home) .rj-unified-directory .rj-directory-details[open] nav{padding:17
 .rj-unified-directory .rj-directory-details>nav,body:has(#home) .rj-unified-directory .rj-directory-details[open] nav{padding:14px 0 7px;gap:10px 15px}
 .rj-unified-directory .rj-directory-details>nav a{font-size:.88rem}
 }
+
+
+/* Stable native details layout: avoid display:contents on <details> in Safari.
+   Home is positioned beside the summary; the open navigation stays in normal flow. */
+.rj-unified-directory .rj-directory-actions,
+body:has(#home) .rj-unified-directory .rj-directory-actions{
+  display:block;position:relative;min-height:47px;
+}
+.rj-unified-directory .rj-home-button{
+  position:absolute;top:0;left:0;z-index:1;
+  display:inline-flex;align-items:center;justify-content:center;
+  width:124px;min-width:124px;max-width:124px;min-height:45px;
+  padding:9px 13px;box-sizing:border-box;white-space:nowrap;
+  margin:0;font-size:.92rem;
+}
+.rj-unified-directory .rj-directory-details{
+  display:block;position:static;min-width:0;width:100%;box-sizing:border-box;
+}
+.rj-unified-directory .rj-directory-details>summary{
+  display:flex;align-items:center;justify-content:flex-start;
+  box-sizing:border-box;list-style:none;cursor:pointer;
+  width:100%;min-height:45px;margin:0;padding:9px 0 9px 145px;
+  white-space:nowrap;font-weight:650;line-height:1.3;
+}
+.rj-unified-directory .rj-directory-details>summary::-webkit-details-marker{display:none}
+.rj-unified-directory .rj-directory-details>nav,
+body:has(#home) .rj-unified-directory .rj-directory-details[open] nav{
+  display:flex;flex-wrap:wrap;align-items:flex-start;
+  position:static;width:100%;min-width:0;box-sizing:border-box;
+  padding:15px 0 6px;gap:11px 18px;
+}
+.rj-unified-directory .rj-directory-details:not([open])>nav{display:none}
+.rj-unified-directory .rj-directory-details>nav a{display:inline-block;max-width:100%;line-height:1.45;overflow-wrap:break-word}
+@media(max-width:760px){
+  .rj-unified-directory .rj-home-button{width:116px;min-width:116px;max-width:116px;min-height:43px}
+  .rj-unified-directory .rj-directory-details>summary{min-height:43px;padding-left:132px;font-size:.92rem}
+  .rj-unified-directory .rj-directory-details>nav,
+  body:has(#home) .rj-unified-directory .rj-directory-details[open] nav{padding:13px 0 6px;gap:10px 15px}
+  .rj-unified-directory .rj-directory-details>nav a{font-size:.88rem}
+}
